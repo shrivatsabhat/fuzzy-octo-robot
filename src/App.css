@@ -1,0 +1,149 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+button.selected {
+  border-color: #00a2ff;
+  border-width: .125em;
+  background-color: #b6b6b6;
+}
+
+.banner {
+  max-height: 36em;
+  object-fit: cover;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.card {
+  padding: 1em;
+  margin-block-end: 1em;
+}
+
+.card.highlight {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  max-height: fit-content;
+  max-width: 32em;
+  border-radius: 1em;
+  box-shadow: 0 0.25em .5em rgba(0, 0, 0, 0.1);
+  will-change: box-shadow;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.filters {
+  margin-block: 1em;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 36em;
+  flex-basis: 28em;
+
+}
+
+.input {
+  width: 100%;
+  padding: .75em 1.25em;
+  border: 0.125em solid #dcdcdc;
+  border-radius: 24px;
+  font-size: 1em;
+}
+
+.date {
+  max-width: 8em;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.highlight:hover {
+  box-shadow: 0 0.25em 1em rgba(83, 91, 242, 0.2);
+  cursor: pointer;
+}
+
+.horizontal {
+  width: 100%;
+  overflow-x: auto;
+  display: flex;
+  gap: .5em;
+  margin-block: 1em;
+}
+
+.horizontal>button {
+  flex-shrink: 0;
+}
+
+[class^="read-the-"] {
+  margin-block: 0.5em;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.read-the-title {
+  margin-top: 0;
+  -webkit-line-clamp: 4;
+}
+
+.read-the-desc {
+  -webkit-line-clamp: 4;
+}
+
+.read-the-article-desc {
+  height: 100%;
+  display: block;
+  text-overflow: unset;
+
+}
+
+.read-the-source {
+  color: #888;
+  margin-bottom: 0;
+}
+
+.read-the-date {
+  color: #aaa;
+}
+
+.thubnail {
+  width: 12em;
+  height: 10em;
+  max-height: 10em;
+  max-width: 12em;
+  object-fit: cover;
+  border: .125em solid rgba(187, 187, 187, 0.2);
+  border-radius: 1em;
+}
+
+@media (prefers-color-scheme: dark) {
+  .thubnail {
+    border-color: rgba(238, 238, 238, 0.2);
+  }
+
+  .card.highlight {
+    box-shadow: 0 0.25em .5em rgba(255, 255, 255, .1);
+  }
+
+  .highlight:hover {
+    box-shadow: 0 0.25em 1em rgba(36, 205, 221, 0.2);
+  }
+
+  button.selected {
+    background-color: #888;
+    border-color: aliceblue;
+  }
+
+}
