@@ -13,7 +13,17 @@ Alternatively, we can also use redirection from a file.
 ```sh
 docker load < saved-new-app.tar
 ```
-> Based on the article steps are provided https://medium.com/@sanketmeghani/docker-transferring-docker-images-without-registry-2ed50726495f 
+> Based on the article steps are provided https://medium.com/@sanketmeghani/docker-transferring-docker-images-without-registry-2ed50726495f
+
+You can verify in the docker-desktop  
+<img width="1511" alt="Screenshot 2024-08-07 at 9 53 01 AM" src="https://github.com/user-attachments/assets/f53253d0-c4bd-428e-b983-473893eb1037">
+
+You directly run from docker and navigate to local web URL by clicking on ports
+<img width="1511" alt="Screenshot 2024-08-07 at 9 54 48 AM" src="https://github.com/user-attachments/assets/543259c5-2d78-483a-b1ce-65973953fb74">
+
+OR 
+
+run `docker run -p 5173:5173 news-app:latest` at your terminal 
 
 # Run locally 
 
